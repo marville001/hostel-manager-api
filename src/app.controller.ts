@@ -23,4 +23,9 @@ export class AppController {
     console.log(params.id);
     return `This action returns a #${params.id} cat`;
   }
+
+  @Get('books/:id')
+  fingCustomerBooks(@Param("id") id: string){
+    return `These are books for customer with id #${id}`;
+  }
 }
