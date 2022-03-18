@@ -4,7 +4,6 @@ import {
   Post,
   UseGuards,
   Request,
-  ValidationPipe,
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { AuthService } from './auth.service';
