@@ -14,7 +14,10 @@ export class HostelDto {
 
   @IsNumber()
   @IsNotEmpty()
-  readonly price: number;
+  readonly rent: number;
+
+  @IsNumber()
+  readonly deposit: number = 0;
 
   @IsNotEmpty()
   readonly location: string;

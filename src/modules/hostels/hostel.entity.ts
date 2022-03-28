@@ -44,7 +44,13 @@ export class Hostel extends Model<Hostel> {
     type: DataType.INTEGER,
     allowNull: false,
   })
-  price: number;
+  rent: number;
+
+  @Column({
+    type: DataType.INTEGER,
+    allowNull: true,
+  })
+  deposit: number;
 
   @ForeignKey(() => User)
   @Column({
